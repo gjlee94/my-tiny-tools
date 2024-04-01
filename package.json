@@ -1,8 +1,8 @@
 {
   "name": "tiny-ui",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./src/hooks/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
