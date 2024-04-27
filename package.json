@@ -2,7 +2,7 @@
   "name": "my-tiny-tools",
   "version": "0.0.3",
   "type": "module",
-  "main": "./src/hooks/index.ts",
+  "main": "./src/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
