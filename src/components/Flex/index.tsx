@@ -13,6 +13,7 @@ export const Flex = forwardRef(function Flex<T extends ElementType>(
   ref: ComponentPropsWithRef<T>['ref']
 ) {
   const styles: CSSProperties = {
+    display: 'flex',
     alignItems: props.align,
     justifyContent: props.justify,
     flexDirection: props.direction,
