@@ -1,13 +1,12 @@
-import { ComponentPropsWithRef, CSSProperties, ReactElement, forwardRef, ElementType } from 'react';
+import { ComponentPropsWithRef, CSSProperties, forwardRef, ElementType } from 'react';
 
-export interface FlexOptions<T extends ElementType = 'div'> {
+export type FlexOptions<T extends ElementType = 'div'> = {
   as?: T;
-  children?: ReactElement[];
   ['align']?: CSSProperties['alignItems'];
   ['justify']?: CSSProperties['justifyContent'];
   ['direction']?: CSSProperties['flexDirection'];
   ['flex']?: CSSProperties['flex'];
-}
+} & React.ComponentPropsWithoutRef<T>;
 
 export const Flex = forwardRef(function Flex<T extends ElementType>(
   props: FlexOptions<T>,
@@ -22,9 +21,5 @@ export const Flex = forwardRef(function Flex<T extends ElementType>(
 
   const Element = props.as || 'div';
 
-  return (
-    <Element ref={ref} style={styles} {...props}>
-      {props.children}
-    </Element>
-  );
+  return <Element ref={ref} style={styles} {...props} />;
 });
