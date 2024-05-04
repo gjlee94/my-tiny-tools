@@ -12,7 +12,8 @@
   },
   "scripts": {
     "dev": "vite --config vite.config.ts --port 3000",
-    "build": "vite build --config vite.config.ts"
+    "build": "rm -rf dist esm && tsc -p tsconfig.json --declaration --declarationDir dist ",
+    "prepack": "pnpm build"
   },
   "dependencies": {
     "react": "^18.2.0",
