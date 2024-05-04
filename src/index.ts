@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
-export { Flex } from './components';
+import { Flex } from './components';
+import { useDisclosure } from './hooks';
 
-export { useDisclosure } from './hooks';
+export { Flex, useDisclosure };

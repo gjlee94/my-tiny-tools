@@ -2,10 +2,13 @@
   "name": "my-tiny-tools",
   "version": "0.0.19",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./src/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "import": "./src/index.ts"
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.umd.cjs"
+    }
   },
   "scripts": {
     "dev": "vite --config vite.config.ts --port 3000",
