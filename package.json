@@ -3,6 +3,9 @@
   "version": "0.0.7",
   "type": "module",
   "main": "./src/index.ts",
+  "bin": {
+    "run": "./src/index.ts"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
