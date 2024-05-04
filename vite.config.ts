@@ -20,7 +20,9 @@ export default defineConfig(({ command }) => {
       build: {
         lib: {
           entry: path.resolve(__dirname, 'src/index.ts'),
+          name: 'my-tiny-tools',
           formats: ['es', 'umd'],
+          fileName: (format) => `${format}.js`,
         },
         rollupOptions: {
           external: ['react', 'react-dom'],
