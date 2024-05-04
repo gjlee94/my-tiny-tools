@@ -4,9 +4,6 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "run": "index.ts"
-  },
   "exports": {
     "import": "./src/index.ts"
   },
@@ -39,21 +36,6 @@
     "typescript": "^5.4.3",
     "vite": "^5.2.5",
     "vite-plugin-dts": "^3.9.0"
-  },
-  "publishConfig": {
-    "access": "public",
-    "main": "dist/index.js",
-    "module": "esm/index.mjs",
-    "exports": {
-      ".": {
-        "require": "./dist/index.js",
-        "import": "./esm/index.mjs",
-        "types": "./dist/index.d.ts"
-      },
-      "./package.json": "./package.json"
-    },
-    "types": "dist/index.d.ts",
-    "import": "esm/index.mjs"
   },
   "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
 }
