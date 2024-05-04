@@ -2,9 +2,13 @@
   "name": "my-tiny-tools",
   "version": "0.0.10",
   "type": "module",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "run": "index.ts"
+  },
+  "exports": {
+    "import": "./src/index.ts"
   },
   "scripts": {
     "dev": "vite",

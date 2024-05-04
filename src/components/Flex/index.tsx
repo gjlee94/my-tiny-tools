@@ -1,3 +1,4 @@
+import React from 'react';
 import { ComponentPropsWithRef, CSSProperties, forwardRef, ElementType } from 'react';
 
 export type FlexOptions<T extends ElementType = 'div'> = {
