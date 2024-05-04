@@ -2,9 +2,9 @@
   "name": "my-tiny-tools",
   "version": "0.0.8",
   "type": "module",
-  "main": "./src/index.ts",
+  "main": "index.ts",
   "bin": {
-    "run": "./src/index.ts"
+    "run": "index.ts"
   },
   "scripts": {
     "dev": "vite",
