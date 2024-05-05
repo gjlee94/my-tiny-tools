@@ -2,7 +2,7 @@
   "name": "my-tiny-tools",
   "version": "0.0.22",
   "type": "module",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "vite --config vite.config.ts --port 3000",
-    "build": "rm -rf dist esm && npx tsc -p tsconfig.json --declaration --declarationDir dist ",
+    "build": "vite build",
     "prepack": "pnpm build"
   },
   "dependencies": {
