@@ -1,6 +1,6 @@
 {
   "name": "my-tiny-tools",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "type": "module",
   "main": "dist/umd.js",
   "module": "dist/es.js",
