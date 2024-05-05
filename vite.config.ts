@@ -17,6 +17,7 @@ export default defineConfig(({ command }) => {
     // Build config
     return {
       plugins: [react(), dts()],
+      target: 'esnext',
       build: {
         lib: {
           entry: path.resolve(__dirname, 'src/index.ts'),
