@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "vite --config vite.config.ts --port 3000",
-    "build": "rm -rf dist esm && tsc -p tsconfig.json --declaration --declarationDir dist ",
+    "build": "rm -rf dist esm && npx tsc -p tsconfig.json --declaration --declarationDir dist ",
     "prepack": "pnpm build"
   },
   "dependencies": {
