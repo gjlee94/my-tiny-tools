@@ -2,8 +2,15 @@
   "name": "my-tiny-tools",
   "version": "0.0.26",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "dist/umd.js",
+  "module": "dist/es.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es.js",
+      "require": "./dist/umd.js"
+    }
+  },
   "files": [
     "dist/**/*"
   ],
