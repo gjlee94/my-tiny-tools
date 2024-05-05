@@ -1,6 +1,10 @@
 {
   "name": "my-tiny-tools",
   "version": "0.0.27",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjlee94/my-tiny-tools"
+  },
   "type": "module",
   "main": "dist/umd.js",
   "module": "dist/es.js",
