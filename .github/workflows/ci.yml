@@ -21,7 +21,7 @@ jobs:
         uses: ./.github/actions/pnpm-setup-node
 
       - name: install dependency
-        run: pnpm install --frozon-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Run pnpm command
         run: pnpm ${{ matrix.command }}
