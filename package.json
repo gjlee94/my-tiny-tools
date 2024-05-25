@@ -20,6 +20,7 @@
   ],
   "scripts": {
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
+    "type:check": "tsc --noEmit",
     "dev": "vite --config vite.config.ts --port 3000",
     "build": "vite build",
     "prepack": "pnpm build"
