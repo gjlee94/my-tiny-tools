@@ -3,7 +3,7 @@ description: setup pnpm & node
 runs:
   using: composite
   steps:
-    - uses: pnpm/action-setup@4
+    - uses: pnpm/action-setup@2
       with:
         version: 8
     - uses: actions/setup-node@v4
