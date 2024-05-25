@@ -19,6 +19,7 @@
     "dist/**/*"
   ],
   "scripts": {
+    "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
     "dev": "vite --config vite.config.ts --port 3000",
     "build": "vite build",
     "prepack": "pnpm build"
