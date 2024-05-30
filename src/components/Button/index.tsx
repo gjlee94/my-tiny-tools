@@ -1,14 +1,14 @@
-import { ReactNode } from 'react';
+import { ButtonHTMLAttributes, ReactNode, forwardRef } from 'react';
 
-type Props = {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   onClick: () => void;
   children: ReactNode;
 };
 
-export const Button = (props: Props) => {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function (props, ref) {
   return (
-    <div role="button" onClick={props.onClick}>
+    <button ref={ref} onClick={props.onClick}>
       {props.children}
-    </div>
+    </button>
   );
-};
+});
