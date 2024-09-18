@@ -12,7 +12,8 @@
   "exports": {
     ".": {
       "import": "./dist/es.js",
-      "require": "./dist/umd.js"
+      "require": "./dist/umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
@@ -28,6 +29,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -67,5 +72,6 @@
     "vite": "^5.2.5",
     "vite-plugin-dts": "^3.9.0"
   },
+  "sideEffects": false,
   "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
 }
